@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 id="projectHead">PROJECTS</h1>
+    <div class="container-fluid">
+        <div class="row search_add">
+            <div>
+                <form action="projects" method="POST">
+                    <input id="projectSearch" name="proName" type="text" placeholder="Enter Project Name - ">
+                    <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"/>
+                          </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="row rowPro">
+                <div class="col-4" id="proJect" >
+                    <h3 class="titleDesc">Projects List</h3>
+                    <!-- <button type="button">Proger using Flask</button> -->
+                    {% if projList %}
+                        {% for x in range(projList|length) %}
+                
+                                <button id="proButton" onclick="location.href='/proDetails/{{projList[x]}}';" type="button">{{projList[x]}}</button>
+                            
+                        {% endfor %}
+                    {% endif %}
+
+
+                </div>
+                <div class="col-7" id="proDesc">
+                    {% if projectDetails %}
+                        <img id="security" src="{{url_for('static', filename = 'images/'+projectDetails.domain+'.png')}}" alt="">
+                    {% endif %}
+                    <h3 class="titleDesc">Project Description</h3>
+                    {% if projectDetails %}   
+                            <h5>Domain : {{projectDetails.domain}}</h5>
+                            <h5>Tools Used - 
+                                {% for x in toolsS %}
+                                    <button id ="toolsS">{{x}}</button>
+                                {% endfor %}
+                            </h5>
+                            <h5>Status : {{projectDetails.status}}</h5>
+                            <h5>Description - </h5>
+                            <h5>
+                                {{projectDetails.description}}
+                            </h5>
+                    {% else %}
+                            <h5>Domain - </h5>
+                            <h5>Tools Used - </h5>
+                            <h5>Description - </h5>
+                            <h5>
+                                
+                            </h5>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

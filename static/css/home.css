@@ -1,0 +1,116 @@
+@font-face {
+    font-family: Cyber;
+    src: url(../fonts/Cyberpunk.ttf);
+}
+
+@font-face {
+    font-family: Ocra;
+    src: url(../fonts/OCRAEXT.TTF);
+}
+body {
+    background-color: black;
+    font-family: Ocra;
+}
+
+.sidebar {
+    background-color: grey;
+    height: 100vh;
+}
+
+#home_img {
+    width: 65%;
+    border-radius: 75%;
+    margin: 10% 17.5%;
+}
+
+#uname {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 2rem;
+    font-family: Cyber;
+    margin-bottom: 50px;
+}
+
+.side-b{
+    width: 100%;
+    margin-top: 5px;
+    border: none;
+    height: 45px;
+    color: antiquewhite;
+    font-family: Cyber;
+    background-color: grey;
+    padding: 0 10px;
+}
+
+.side-b:hover {
+    background-color: black;
+    color: green;
+}
+
+#info {
+    display: flex;
+    margin-left: 10%;
+    padding-top: 10%;
+    font-family: Ocra;
+    color: green;
+}
+
+.intro {
+    margin-left: 10%;
+    font-family: Ocra;
+    font-size: 20px;
+    color: white;
+    width: 50%;
+}
+
+#intro1{
+    background-color: black;
+    border: 2px solid green;
+    color: white;
+    height: 150px;
+    width: 50%;
+    margin-left: 10%;
+    display: block;
+}
+
+#res {
+    font-family: Ocra;
+    margin-right: 10px;
+    color: #198754;
+    border: 1px solid #198754;
+    background-color: black;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+#res:hover {
+    background-color: #198754;
+    color: white;
+}
+
+form {
+    display: inline;
+}
+
+#two {
+    margin-top: 1%;
+    font-family: Ocra;
+    background-color: black;
+    border: 1px solid #DC3545;
+    color: #DC3545;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 20px;
+    margin-left: 10%;
+}
+
+#two:hover {
+    background-color: #DC3545;
+    color: white;
+}
+
+#like {
+    padding-bottom: 2px;
+}
+

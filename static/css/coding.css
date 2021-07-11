@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Cyber;
+    src: url(../fonts/Cyberpunk.ttf);
+}
+
+#codeHead {
+    font-family: Cyber;
+    margin: 2% 0;
+    margin-left: 2%;
+    color: green;
+
+}
+
+.skillsRow {
+    margin: 2% 0;
+    margin-left: 2%;
+}
+
+.headS {
+    color: green;
+    font-family: Cyber;
+}
+
+.headS h4{
+    margin: 3% 0;
+    margin-top: 25px;
+}
+
+
+.skills-b {
+    background-color: black;
+    font-family: Ocra;
+    border: 2px solid green;
+    color: green;
+    width: 60%;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.skills-b:hover {
+    background-color: green;
+    color: black;
+}

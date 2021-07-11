@@ -1,0 +1,112 @@
+@font-face {
+    font-family: Cyber;
+    src: url(../fonts/Cyberpunk.ttf);
+}
+
+@font-face {
+    font-family: Ocra;
+    src: url(../fonts/OCRAEXT.TTF);
+}
+
+#projectHead {
+    margin: 2% 0;
+    margin-left: 2%;
+    color: green;
+    font-family: Cyber;
+}
+#projectSearch {
+    width: 25%;
+    background-color: black;
+    border: 2px solid green;
+    display: inline-block;
+    color: green;
+    height: 40px;
+    padding-left: 10px;
+}
+
+::placeholder {
+    color: green;
+}
+
+.rowPro {
+    margin-top: 2%;
+    color: green;
+
+}
+#proJect {
+    border-right: 2px solid green;
+}
+
+
+
+.search_add button{
+    background-color: black;
+    border: 2px solid green;
+    display: inline-block;
+    color: green;
+    height: 40px;
+    width: 40px;
+}
+
+.search_add button:hover{
+    background-color: green;
+    border: 2px solid black;
+    color: black;
+}
+
+.rowPro button {
+    background-color: black;
+    color: green;
+    border: 1px solid green;
+    width: 95%;
+    height: fit-content;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.rowPro button:hover {
+    background-color: green;
+    color: black;
+}
+
+
+
+#proDesc {
+    margin-left: 15px;
+    color: green;
+}
+#cars {
+    background-color: black;
+    border: 2px solid green;
+    color: green;
+    height: fit-content;
+    width: 200px;
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+
+#toolsS {
+    width: fit-content;
+}
+
+#dropSubmit {
+    background-color: black;
+    color: green;
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid green;
+}
+
+#dropSubmit:hover {
+    background-color: green;
+    color: black;
+}
+.titleDesc {
+    margin-bottom: 20px;
+}
+
+#security {
+    width: 100px;
+    height: 100px;
+    float: right;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/proAdd.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PROJECT UPDATE</h1>
+    <form action="proAdd" method="POST">
+        <input type="text" id="Proname" placeholder="Project Name - " name="proName" value="{{project}}">
+        <select name="status" id="statusId">
+            <option value="Active">Active</option>
+            <option value="Hold">On hold</option>
+            <option value="Completed">Completed</option>
+            <option value="Cancelled">Cancelled</option>
+            <option value="Archived">Archived</option>
+        </select>
+        <select id="domain" name="domain">
+            <option name="domain" value="Web Development">Web Development</option>
+            <option name="domain" value="Full Stack">Full Stack</option>
+            <option name="domain" value="CyberSecurity">CyberSecurity</option>
+            <option name="domain" value="Data Science">Data Science</option>
+            <option name="domain" value="Machine Learning">Machine Learning</option>
+            <option name="domain" value="Internet of Things">Internet of Things</option>
+            <option name="domain" value="UI/UX Design">UI/UX Design</option>
+            <option name="domain" value="Android Development">Android Development</option>
+            <option name="domain" value="Game Design">Game Design</option>
+            <option name="domain" value="DevOps">DevOps</option>
+            <option name="domain" value="Robotic Process Automation">Robotic Process Automation</option>
+            <option name="domain" value="Software Methodologies and Testing">Software Methodologies and Testing</option>
+          </select>
+        <input type="text" name="tools" placeholder="Enter tools used separated by comma">
+        <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Project Description"></textarea>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

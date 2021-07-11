@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/recovery.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PASSWORD RECOVERY</h1>
+    {% if question %}
+        <p>{{question}}</p>
+        <form action="forgot_password" method="POST">
+            <input type="text" name="answer">
+            <button>Submit</button>
+        </form>
+    {% else %}
+        <p>Enter your username ?</p>
+        <form action="forgot_password" method="POST">
+            <input type="text" name="uname">
+            <button>Submit</button>
+        </form>
+    {% endif %}
+
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for msg in messages %}
+            <p id="flashed">{{msg}}</p>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+</body>
+</html>

@@ -1,0 +1,77 @@
+@font-face {
+    font-family: Cyber;
+    src: url(../fonts/Cyberpunk.otf);
+}
+
+@font-face {
+    font-family: Ocra;
+    src: url(../fonts/OCRAEXT.TTF);
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+h1{
+    color: green;
+    font-family: Cyber;
+    text-align: center;
+    padding-top: 10%;
+}
+
+form input{
+    display: block;
+    background-color: black;
+    color: green;
+    border: 2px solid green;
+    margin-top: 5px;
+    font-family: Ocra;
+    font-size: 20px;
+    width: 30%;
+    height: 25px;
+    margin: 0 35%;
+    margin-top: 5px;
+    padding: 5px 0;
+    padding-left: 10px;
+}
+
+::placeholder {
+    color: green;
+}
+
+
+form button {
+    background-color: black;
+    color: green;
+    border: 2px solid green;
+    margin-top: 20px;
+    font-family: Ocra;
+    width: 20%;
+    margin: 0 40%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+form button:hover {
+    background-color: green;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+#flashed {
+    color: red;
+    text-align: center;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+p{
+    color: green;
+    font-family: Ocra;
+    text-align: center;
+}

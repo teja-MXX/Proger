@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Cyber;
+    src: url(../fonts/Cyberpunk.ttf);
+}
+
+@font-face {
+    font-family: Ocra;
+    src: url(../fonts/OCRAEXT.TTF);
+}
+
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: Cyber;
+    color: green;
+    padding-left: 5%;
+    margin-bottom: 50px;
+}
+
+input, textarea, button,select {
+    background-color: black;
+    color: green;
+    border: 2px solid green;
+    width: 40%;
+    margin-left: 5%;
+    font-size: 25px;
+    padding: 5px 0;
+    padding-left: 10px;
+    font-family: Ocra;
+    display: block;
+    margin-top: 10px;
+}
+#Proname {
+    display: inline;
+}
+#statusId {
+    width: 30%;
+    display: inline;
+    
+}
+textarea {
+    width: 60%;
+}
+
+button:hover {
+    background-color: green;
+    color: black;
+}
+::placeholder {
+    color: green;
+}

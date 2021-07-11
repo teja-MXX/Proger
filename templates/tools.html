@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 id="toolsHead">TECHNOLOGIES</h1>
+<div class="addSearch">
+    <form action="toolAdd" method="POST">
+        <input type="text" placeholder="Add" name="tool">
+        <button id="add">+</button>
+    </form>
+</div>
+    <!-- {% if toolsList %}
+        {% for x in range(toolsList|length) %}
+            {% if x % 4 == 0 %}
+                <div class="row">
+                    <div class="col-3"><button type="button" class="tools-Button">{{toolsList[x]}}</button></div>
+            {% elif x % 4 == 3 or x == toolsList|length - 1 %}
+                    <div class="col-3"><button type="button" class="tools-Button">{{toolsList[x]}}</button></div>
+                </div>
+            {% else %}
+            <div class="col-3"><button type="button" class="tools-Button">{{toolsList[x]}}</button></div>
+            {% endif %}
+        {% endfor %}
+    {% endif %} -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 sama">
+                <h2 style="color: green;">Tools List</h1>
+                {% if toolsList %}
+                    {% for x in range(toolsList|length) %}
+                        <!-- {% if x % 3 == 0 %}
+                            <div class="row">
+                                <div class="col-4">
+                                    <button onclick="location.href='/tools/{{toolsList[x]}}';" type="button" class="tools-Button">{{toolsList[x]}}</button>
+                                </div>
+                        {% elif x % 3 == 2 or x == toolsList|length -1 %}
+                                <div class="col-4">
+                                    <button type="button" onclick="location.href='/tools/{{toolsList[x]}}';" class="tools-Button">{{toolsList[x]}}</button></div>
+                                </div>
+                        {% else %}
+                        <div class="col-4">
+                            <button type="button" onclick="location.href='/tools/{{toolsList[x]}}';" class="tools-Button">{{toolsList[x]}}</button>
+                        </div>
+                        {% endif %} -->
+                        <button type="button" onclick="location.href='/tools/{{toolsList[x]}}';" class="tools-Button">{{toolsList[x]}}</button>
+                    {% endfor %}
+                {% endif %}
+        
+            </div>
+            <div class="col-5 toolsToPros">
+                <h2 style="color: green;">Projects List</h1>
+                {% if toolsToProjects %}
+                    {% for x in toolsToProjects %}
+                            <button type="button" class="toolsToPros">{{x}}</button>
+                        
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    
+    </div>
+
+    
+
+
+{% endblock %}

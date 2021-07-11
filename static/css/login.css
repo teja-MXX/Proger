@@ -1,0 +1,94 @@
+@font-face {
+    font-family: Cyber;
+    src: url(../fonts/Cyberpunk.ttf);
+}
+
+@font-face {
+    font-family: Ocra;
+    src: url(../fonts/OCRAEXT.TTF);
+}
+
+body {
+    background-color: black;
+    height: 90vh;
+}
+
+h1 {
+    color: green;
+    font-family: Cyber;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 20px;
+}
+
+form input {
+    display: block;
+    background-color: black;
+    border: 2px solid green;
+    color: green;
+    width: 25%;
+    margin: 0% 37.5%;
+    margin-bottom: 10px;
+    font-family: Ocra;
+    padding: 5px 0;
+    padding-left: 10px;
+    font-size: 20px;
+    
+}
+
+::placeholder {
+    color: green;
+}
+
+form button {
+    background-color: black;
+    border: 2px solid green;
+    font-size: 20px;
+    width: fit-content;
+    color: green;
+    font-family: Ocra;
+    width: 15%;
+    margin: 5px 42.5%;
+    padding: 5px 0;
+}
+
+form button:hover {
+    background-color: green;
+    color: black;
+    
+}
+
+#flashed {
+    color: red;
+    text-align: center;
+    font-family: Ocra;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+a{
+    color: green;
+    text-align: center;
+    text-decoration: none;
+    font-family: Ocra;
+    font-size: 20px;
+}
+
+#register {
+    background-color: black;
+    border: 2px solid green;
+    font-size: 20px;
+    width: fit-content;
+    color: green;
+    font-family: Ocra;
+    width: 20%;
+    margin: 5px 40%;
+    padding: 5px 5px;
+}
+
+#register:hover {
+    background-color: green;
+   color: black;
+
+}
+

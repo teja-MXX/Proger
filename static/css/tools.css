@@ -1,0 +1,91 @@
+@font-face {
+    font-family:Cyber ;
+    src: url(../fonts/Cyberpunk.ttf);
+}
+
+#toolsHead {
+    margin: 2% 0;
+    margin-left: 2%;
+    color: green;
+    font-family: Cyber;
+}
+
+.addSearch {
+    margin-left: 2%;
+}
+.addSearch input {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: black;
+    border: 2px solid green;
+    color: green;
+    width: 20%;
+    height: 40px;
+    padding-left: 10px;
+}
+
+::placeholder {
+    color: green;
+}
+
+#add{
+    background-color: black;
+    border: 2px solid green;
+    color: green;
+    height: 40px;
+    width: 40px;
+
+}
+
+.sama {
+    border-right: 2px solid green;
+    
+
+}
+
+#add:hover {
+    background-color: green;
+    border: 2px solid green;
+    color: black;
+}
+
+#toolName {
+    color: green;
+}
+
+h2 {
+    margin-top: 10px;
+}
+.tools-Button {
+    background-color: black;
+    border: 2px solid green;
+    color: green;
+    width: fit-content;
+    margin-top: 10px;
+    font-size: 25px ;
+    padding: 0 10px;
+}
+
+
+.tools-Button:hover {
+    background-color: green;
+    color: black;
+}
+
+.toolsToPros {
+    margin-left: 10px;
+}
+.toolsToPros button{
+    background-color: black;
+    border: 2px solid green;
+    color: green;
+    width: fit-content;
+    margin-top: 10px;
+    font-size: 25px ;
+
+}
+
+.toolsToPros button:hover{
+    background-color: green;
+    color: black;
+}
